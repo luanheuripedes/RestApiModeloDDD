@@ -1,0 +1,13 @@
+﻿using System;
+
+namespace RestApiModeloDDD.Domain.Entitys
+{
+    public class Cliente : Base
+    {
+        public string Name { get; set; }
+        public string SobreNome { get; set; }
+        public string Email { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public bool IsAtivo { get; set; }
+    }
+}

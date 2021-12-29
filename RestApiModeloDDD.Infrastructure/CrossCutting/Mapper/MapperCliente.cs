@@ -8,7 +8,6 @@ namespace RestApiModeloDDD.Infrastructure.CrossCutting.Mapper
 {
     public class MapperCliente : IMapperCliente
     {
-        private IEnumerable<ClienteDto> clienteDtos = new List<ClienteDto>();
 
         public Cliente MapperDtoToEntity(ClienteDto clienteDto)
         {
@@ -46,6 +45,6 @@ namespace RestApiModeloDDD.Infrastructure.CrossCutting.Mapper
                 Email = c.Email
             });
             return dto;
+        }
     }
-}
 }

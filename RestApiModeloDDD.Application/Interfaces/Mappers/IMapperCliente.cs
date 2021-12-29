@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RestApiModeloDDD.Infrastructure.CrossCutting.Interfaces
+namespace RestApiModeloDDD.Application.Interfaces.Mappers
 {
     public interface IMapperCliente
     {

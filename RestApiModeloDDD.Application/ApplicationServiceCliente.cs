@@ -6,5 +6,6 @@ namespace RestApiModeloDDD.Application
 {
     public class ApplicationServiceCliente
     {
+
     }
 }

@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RestApiModeloDDD.Domain.Core.Interfaces.Repositorys;
+﻿using RestApiModeloDDD.Domain.Core.Interfaces.Repositorys;
 using RestApiModeloDDD.Domain.Core.Interfaces.Services;
-using RestApiModeloDDD.Infrastructure.Data;
+using System.Collections.Generic;
 
 namespace RestApiModeloDDD.Domain.Services
 {
@@ -15,7 +12,6 @@ namespace RestApiModeloDDD.Domain.Services
         {
             this.repository = repository;
         }
-
 
         public void Add(TEntity obj)
         {

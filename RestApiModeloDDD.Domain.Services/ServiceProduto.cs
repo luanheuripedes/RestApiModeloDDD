@@ -1,6 +1,7 @@
 ﻿using RestApiModeloDDD.Domain.Core.Interfaces.Repositorys;
 using RestApiModeloDDD.Domain.Core.Interfaces.Services;
 using RestApiModeloDDD.Domain.Entitys;
+using RestApiModeloDDD.Domain.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,11 +10,11 @@ namespace RestApiModeloDDD.Domain.Services
 {
     public class ServiceProduto : ServiceBase<Produto>, IServiceProduto
     {
-        private readonly IRepositoryProduto repositoryProduto;
+        private readonly IRepositoryProduto _repositoryProduto;
 
         public ServiceProduto(IRepositoryProduto repositoryProduto) : base (repositoryProduto)
         {
-            this.repositoryProduto = repositoryProduto;
+            this._repositoryProduto = repositoryProduto;
         }
     }
 }

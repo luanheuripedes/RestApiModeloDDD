@@ -18,8 +18,9 @@ namespace RestApiModeloDDD.Infrastructure.CrossCutting.IOC
             builder.RegisterType<ApplicationServiceCliente>().As<IApplicationServiceCliente>();
             builder.RegisterType<ApplicationServiceProduto>().As<IApplicationServiceProduto>();
 
-            builder.RegisterType<IServiceCliente>().As<IServiceCliente>();
-            builder.RegisterType<IServiceProduto>().As<IServiceProduto>();
+
+            builder.RegisterType<Domain.Services.ServiceCliente>().As<IServiceCliente>();
+            builder.RegisterType<Domain.Services.ServiceProduto>().As<IServiceProduto>();
 
             builder.RegisterType<RepositoryCliente>().As<IRepositoryCliente>();
             builder.RegisterType<RepositoryProduto>().As<IRepositoryProduto>();

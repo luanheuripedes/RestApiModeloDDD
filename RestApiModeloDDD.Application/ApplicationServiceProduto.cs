@@ -1,19 +1,17 @@
 ﻿using RestApiModeloDDD.Application.Dtos;
 using RestApiModeloDDD.Application.Interfaces;
 using RestApiModeloDDD.Application.Interfaces.Mappers;
-using RestApiModeloDDD.Domain.Core.Interfaces.Services;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using RestApiModeloDDD.Domain.Services;
 
 namespace RestApiModeloDDD.Application
 {
     public class ApplicationServiceProduto : IApplicationServiceProduto
     {
-        private readonly IServiceProduto _serviceProduto;
+        private readonly ServiceProduto _serviceProduto;
         private readonly IMapperProduto _mapperProduto;
 
-        public ApplicationServiceProduto(IServiceProduto serviceProduto, IMapperProduto mapperProduto)
+        public ApplicationServiceProduto(ServiceProduto serviceProduto, IMapperProduto mapperProduto)
         {
             _serviceProduto = serviceProduto;
             _mapperProduto = mapperProduto;

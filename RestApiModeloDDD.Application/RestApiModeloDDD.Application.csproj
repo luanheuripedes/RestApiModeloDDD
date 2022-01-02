@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestApiModeloDDD.Domain.Core\RestApiModeloDDD.Domain.Core.csproj" />
+    <ProjectReference Include="..\RestApiModeloDDD.Domain.Services\RestApiModeloDDD.Domain.Services.csproj" />
   </ItemGroup>
 
 </Project>
